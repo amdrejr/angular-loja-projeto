@@ -1,0 +1,23 @@
+<header class="header">
+  <h1 class="logo-title" (click)="home()">
+    <span>Loja</span><span class="--orange">Info</span>
+  </h1>
+
+  <app-barra-pesquisa></app-barra-pesquisa>
+
+  <nav class="nav-box">
+    <ul>
+      <li><a routerLink="produtos">Produtos</a></li>
+      <li>|</li>
+      <li><a routerLink="perfil"><i class="fa-solid fa-user"></i></a></li>
+      <li [ngStyle]="{'color': carrinhoService.obterTotalItensCarrinho() > 0 ? '#66cc00' : 'white'}">
+        <a routerLink="carrinho"><i class="fa-solid fa-cart-shopping"></i>
+        <span class="badge-carrinho">
+           {{ carrinhoService.obterTotalItensCarrinho() }}
+        </span>
+        </a>
+      </li>
+      <li><a routerLink="contato"><i class="fa-solid fa-phone"></i></a></li>
+    </ul>
+  </nav>
+</header>
