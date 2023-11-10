@@ -1,4 +1,5 @@
 <section class="produto-destaque">
+  <h2 class="--title">MAIS VENDIDO</h2>
   <div class="produto-box">
     <img [src]="produto.imagem" alt="" class="img-item">
     <div class="produto-info">
@@ -24,7 +25,7 @@
 </section>
 
 <section class="outros-produtos">
-  <h2 class="outros-produtos--title">PRODUTOS EM DESTAQUE</h2>
+  <h2 class="--title">PRODUTOS EM DESTAQUE</h2>
   <div class="product-list">
     <div class="product-list--card" *ngFor="let produto of produtos">
       <a routerLink="/produtos/{{produto.id}}" class="product-list--link">

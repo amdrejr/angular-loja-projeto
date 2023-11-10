@@ -4,7 +4,9 @@
   height: auto;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .produto-box {
@@ -177,7 +179,7 @@
   margin: 50px 0;
 }
 
-.outros-produtos--title {
+.--title {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
